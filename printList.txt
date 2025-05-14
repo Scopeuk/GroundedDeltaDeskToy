@@ -1,0 +1,18 @@
+Arm x6
+wrist x3
+shoulder x3
+tool x1
+base x1
+
+non-printed parts
+806 bearing x3
+
+place bearings into the big hole on the bottom of each shoulder
+
+assemble an arm by pressing two segments togeather (peg into hole) the "spare" peg should be under the arm (nothing sticks out from the arm)
+add the wrist peg into the hole, note the wrist will sit above the other arm section, if that doesnt work turn the part arround
+connect the arm to the wrist, note orientation, one side of the bracket is right on the center of the round part, this is the side the arm should attach from
+
+repeat this for the other two arms
+
+sit each arm ontop of one of the pegs on the base
