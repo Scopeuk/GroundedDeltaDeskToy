@@ -29,3 +29,8 @@ This is a quick and basic openscad model, it's small and quick to print, it requ
 ## Known Problems
 * The tolerance on the bearings is a little loose, the first version has a small piece of electrical tape over each pen and on the edge of each bearing to tighten it up
 * The printed joints are not very good, new design to follow at some point
+
+
+## This Branch
+This branch create a demo set for an alternative fixing method where all parts have either a pass through hole or a mating point for a pin. all parts are then pinned togeather
+

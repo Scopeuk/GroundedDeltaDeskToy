@@ -1,4 +1,5 @@
 include <params.scad>
+use <Pin.scad>
 // lower and upper arm are the same
 
 centerToCenter = 25;
@@ -16,7 +17,7 @@ difference(){
             cylinder(d=Width,h=Thickness);
             translate([centerToCenter,0,0]) cylinder(d=Width,h=Thickness);
         }
-        cylinder(d=pinDia,h=pinHeight+Thickness);
     } 
-    translate([centerToCenter,0,-Thickness]) cylinder(d=pinDia+pinClearenceVert,h=Thickness*3);
+    translate([centerToCenter,0,Thickness]) pinMate();
+    translate([0,0,Thickness]) pinClearence();
 }
