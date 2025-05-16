@@ -11,6 +11,8 @@ This is a quick and basic openscad model, it's small and quick to print, it requ
 | tool | 1 |
 | base | 1 |
 
+All printed parts should print in the openscad export orientation without supports
+
 ## Non-printed parts
 | Part | Count |
 | ---- | ----- |
