@@ -1,5 +1,5 @@
 include <params.scad>
-use <pin.scad>
+use <Pin.scad>
 
 $fs=0.1;
 $fa=1;
