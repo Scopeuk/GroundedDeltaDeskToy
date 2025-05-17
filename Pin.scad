@@ -14,14 +14,18 @@ bearingLength = 5,
 coneLength = 2,
 coneOuterDia = 7,
 pinDia = pinDia,
-bearingDelta = pinClearence
+bearingDelta = pinClearence,
+chamferLength = 1,
+chamferStep = 1
 ){
 assert(bearingLength>coneLength, "bearing length must be longer than cone length");
 translate([0,0,-(matingLength+bearingLength)]) {
+    //chamfer to make locating into hole easier
+    cylinder(d1=pinDia-chamferStep,d2 = pinDia,h= chamferLength);
     //mating section is a fixed length plug
-    cylinder(d=pinDia,h= matingLength);
+    translate([0,0,chamferLength-0.001]) cylinder(d=pinDia,h= matingLength-chamferLength);
     //bearing shaft is full length inside part
-    cylinder(d=pinDia-bearingDelta,h= matingLength+bearingLength);
+    translate([0,0,chamferLength]) cylinder(d=pinDia-bearingDelta,h= matingLength+bearingLength-chamferLength);
     //coneic mating surface
     translate([0,0,(matingLength+bearingLength)-coneLength]) cylinder(d1=pinDia-bearingDelta,d2 = coneOuterDia,h= coneLength);
     }
