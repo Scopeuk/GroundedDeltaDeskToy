@@ -18,7 +18,7 @@ All printed parts should print in the openscad export orientation without suppor
 ## Non-printed parts
 | Part | Count |
 | ---- | ----- |
-| 806 bearing | 3 |
+| 608 bearing | 3 |
 
 
 ## Assembly instructions
