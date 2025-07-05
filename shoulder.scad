@@ -1,11 +1,12 @@
 include <params.scad>
+use <Pin.scad>
 
 $fs=0.1;
 $fa=1;
 
 diskDia = 25;
 diskThickness = 10;
-plateThickness = 3;
+plateThickness = 5;
 
 difference(){
     //base shape
@@ -28,7 +29,7 @@ translate([0,0,diskThickness]){
 			translate([0,0,PivotHeight]) rotate([0,90,0])cylinder(h=plateThickness,d=10);
 			translate([0,-10/2,-0.1]) cube([plateThickness,10,0.1]);
 		}
-		translate([-plateThickness,0,PivotHeight]) rotate([0,90,0]) cylinder(d=pinDia+pinClearence,h=plateThickness*3);
+		translate([0,0,PivotHeight]) rotate([0,-90,0]) pinMate();
 	}
 }
 
