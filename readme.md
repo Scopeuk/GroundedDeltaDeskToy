@@ -36,8 +36,8 @@ All printed parts should print in the openscad export orientation without suppor
 * new pinned joints are a big improvement but they are quite stiff to install, I used a small trigger clamp
 
 
-## This Branch
-This branch create a demo set for an alternative fixing method where all parts have either a pass through hole or a mating point for a pin. all parts are then pinned togeather
+## Pinned joints
+All parts have either a pass through hole or a mating point for a pin. all parts are then pinned togeather
 
 The pinned joints provide constraint and the ability to rotate
 
@@ -49,7 +49,7 @@ there is a necked down part of the pin to allow for reduced friction on the movi
 ## Where STL?
 STL files are generated using github actions to make sure they are up to date with the repo
 visit [https://github.com/Scopeuk/GroundedDeltaDeskToy/actions] 
-select the latest build with the branch name (highlighted in blue) that matches what you are after "PegJoint" for this branch
+select the latest build
 ![Github actions reference](/Images/actions.png)
 Select the download button in the artefacts section
 ![Github actions reference](/Images/artecfacts.png)
