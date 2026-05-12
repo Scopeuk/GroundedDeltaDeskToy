@@ -1,3 +1,4 @@
+use <Pin.scad>
 $fs=0.1;
 $fa=1;
 
@@ -10,17 +11,25 @@ pinHeight = 6;
 pinWasherDia = 10;
 pinWasherHeight = 0.1;
 
-difference(){
-    cylinder(d = baseDia, h = baseHeight);
-    cylinder(d = centerHoleDia, h = baseHeight);
-}
-
-module pin(){
-    cylinder(d = pinWasherDia, h = baseHeight + pinWasherHeight);
-    cylinder(d = pinDia, h = baseHeight + pinWasherHeight + pinHeight);
-}
 
 for(i=[0:120:360]){
-    rotate([0,0,i]) translate([(baseDia/2)-pinInset,0,0]) pin();
+    rotate([0,0,i]) translate([50,0,20/2])  
+    difference(){
+        cube([15,70,20],center=true);
+        translate([0,-70/2,2]) rotate([90,0,0]) pinMate();
+        translate([0,70/2,2]) rotate([-90,0,0]) pinMate();
+    }
+}
+difference(){
+hull(){
+for(i=[0:120:360]){
+    rotate([0,0,i]) translate([50,0,3/2])  cube([15,70,3],center=true);
+}
+}
+hull(){
+for(i=[0:120:360]){
+    rotate([0,0,i]) translate([25,0,2])  cube([15,70,6],center=true);
+}
+}
 }
 

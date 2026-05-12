@@ -18,6 +18,6 @@ difference(){
             translate([centerToCenter,0,0]) cylinder(d=Width,h=Thickness);
         }
     } 
-    translate([centerToCenter,0,Thickness]) pinMate();
+    translate([centerToCenter,0,Thickness]) pinClearence();
     translate([0,0,Thickness]) pinClearence();
 }
