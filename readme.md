@@ -36,8 +36,9 @@ there is a necked down part of the pin to allow for reduced friction on the movi
 
 ## Where STL?
 STL files are generated using github actions to make sure they are up to date with the repo
-visit [https://github.com/Scopeuk/GroundedDeltaDeskToy/actions] 
-select the latest build with the branch name (highlighted in blue) that matches what you are after "PegJoint" for this branch
+visit [Actions for this branch](https://github.com/Scopeuk/GroundedDeltaDeskToy/actions?query=branch%3AtwinSingleDof) and grab the latest buil
+
+ 
 ![Github actions reference](/Images/actions.png)
 Select the download button in the artefacts section
 ![Github actions reference](/Images/artecfacts.png)
