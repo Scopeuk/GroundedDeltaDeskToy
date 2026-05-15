@@ -9,7 +9,7 @@ partDia = 10;
 pinsep = 20;
 center = partHeight/2;
 
-difference() {
+rotate([90,0,0a]) difference() {
     cylinder(d=partDia,h=partHeight);
     translate([0,0,partHeight]) pinMate();
     rotate([0,180,0]) pinMate();

@@ -1,6 +1,6 @@
 # Grounded Delta Desk Toy
-This is a quick and basic openscad model, it's small and quick to print, it requires three non-printed parts (skate/608 bearings)
-![Image of the pinned assembly Grounded Delta Desk Toy](/Images/deltatoy_pinned.jpg)
+This is a quick and basic openscad model, it's small and quick to print. All parts are printed
+![Image of the pinned assembly Grounded Delta Desk Toy](/Images/dualSingleDof.jpg)
 
 
 ## Parts list to print
@@ -10,7 +10,7 @@ This is a quick and basic openscad model, it's small and quick to print, it requ
 | Elbow | 6 |
 | tool | 1 |
 | base | 1 |
-| pins | 24 |
+| pins | 30 |
 
 All printed parts should print in the openscad export orientation without supports
 
